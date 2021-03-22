@@ -1,0 +1,209 @@
+@font-face {
+  font-family: Bank-Gothic;
+  src: url('fonts/bank-gothic/Bank-Gothic-Medium.otf');
+}
+
+@font-face {
+  font-family: Santander-Regular;
+  src: url('fonts/santander/Santander-Regular.ttf');
+}
+
+@font-face {
+  font-family: Santander-Bold;
+  src: url('fonts/santander/Santander-Bold.ttf');
+}
+
+/*******************************************************************************
+Backgrounds
+*******************************************************************************/
+body, .cover, .character-profile-box, .bad-answer, .game-over, .good-answer, .cover-resume { background-color: #000000; }
+.green-button { background-color: #43f000; }
+.red-button { background-color: #dc3545; }
+.pyr { background: rgba(0,0,0,0);}
+.pyr:hover { background-color: #a95b35; }
+
+body { background-image: url('../res/png/back-gradient.png'); }
+.cover { background-image: url('../res/png/back-home.png'); }
+.cover-resume { background-image: url('../res/png/back-resume.png'); }
+.game-over { background-image: url('../res/png/back-game-over.png'); }
+.cover-escenario {background-image: url('../res/png/back.png');}
+
+.cover, .game-over, .cover-resume, .cover-escenario, .imagen, .imagen-excepción { background-repeat: no-repeat; background-size: cover; }
+
+/*******************************************************************************
+Borders
+*******************************************************************************/
+.cover-button, .green-button, .red-button { border: none; }
+.cover-button, .character-box, .character-profile-box { border-radius: 4px; }
+.character, .character-box { border: solid #a95b35 2px; }
+.good-answer { border: solid #43f000 2px; border-radius: 4px; }
+.bad-answer { border: solid #dc3545 2px; border-radius: 4px; }
+.pyr { border: solid #a95b35 2px; border-radius:4px; }
+.bad-answer, .good-answer, .green-button, .red-button { border-radius: 4px;}
+
+/*******************************************************************************
+Cursors
+*******************************************************************************/
+.cover-button, .character, .green-button, .red-button, .pyr, .btn-map-svg { cursor: pointer; }
+
+/*******************************************************************************
+Efects
+*******************************************************************************/
+.character { transition: 0.3s; }
+.character:hover, .character-profile-box, .green-button:hover, .red-button:hover { opacity: 0.5; }
+
+/*******************************************************************************
+Font families
+*******************************************************************************/
+body { font-family: "Santander-Regular", sans-serif; }
+h1, h2, h3, h4, h5, h6, .cover-button, .green-button, .red-button, .pyr { font-family: "Bank-Gothic", serif; text-align: center; color: #a95b35; line-height: 100%; text-transform: uppercase;}
+
+/*******************************************************************************
+Font sizes
+*******************************************************************************/
+body { font-size: 1em; }
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6, .cover-button, .green-button, .red-button { font-size: 1.1em; }
+
+@media only screen and (min-width: 961px) {
+  body { font-size: 1.2em; }
+  h1 { font-size: 1.6em; }
+  h2 { font-size: 1.4em; }
+  h3 { font-size: 1.6em; }
+  h4 { font-size: 1.5em; }
+  h5 { font-size: 1.4em; }
+  h6, .cover-button, .green-button, .red-button { font-size: 1.3em; }
+}
+@media only screen and (min-width: 1201px) {
+  body { font-size: 1.2em; }
+  h1 { font-size: 2.2em; }
+  h2 { font-size: 1.4em; }
+  h3 { font-size: 1.8em; }
+  h4 { font-size: 1.7em; }
+  h5 { font-size: 1.6em; }
+  h6, .cover-button, .green-button, .red-button { font-size: 1.5em; }
+}
+
+/*******************************************************************************
+Foregraunds
+*******************************************************************************/
+body, .cover-button, .pyr:hover { color: rgb(255, 255, 255); }
+.green-button, .red-button { color: #000000; }
+.pyr { color: #ffffff; }
+
+/*******************************************************************************
+Heights
+*******************************************************************************/
+.cover, .game-over, .cover-resume, .cover-escenario {height: 100vh;}
+.cover-logo, .cover-logo-game-over, .characters, .character, .character-profile-photo { height: auto; }
+.characters-button { height: 24px; }
+.character-box { height: 100%; }
+
+/*******************************************************************************
+Line heights
+*******************************************************************************/
+body { line-height: 1.5; }
+
+/*******************************************************************************
+Margins
+*******************************************************************************/
+.character, .green-button, .red-button { margin: 8px; }
+
+/*******************************************************************************
+Opacities
+*******************************************************************************/
+.escenarios-button:hover, .escenarios-button:focus {filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(299deg) brightness(110%) contrast(102%);} 
+.characters-button { opacity: 0.5; }
+
+/*******************************************************************************
+Paddings
+*******************************************************************************/
+.cover-button, .green-button, .red-button, .pyr { padding: 8px 16px; }
+.bad-answer, .good-answer, .characters, .character-profile-box { padding: 32px }
+.character-box { padding: 16px }
+
+/*******************************************************************************
+Positions
+*******************************************************************************/
+.character, .character-box, .character-profile-box, .character-profile-photo { position: relative; }
+
+/*******************************************************************************
+Widths
+*******************************************************************************/
+body { min-width: 320px; }
+.bad-answer, .good-answer { width: 80vw; }
+.cover, .cover-resume, .characters, .game-over, .cover-escenario { width: 100vw;}
+.cover-logo { width: 75vw; }
+.cover-logo-game-over { width: 95vw; }
+.cover-title { width: 90vw; }
+.cover-title-game-over { width: 90vw; }
+.characters-button { width: auto; }
+.cover-logo-resume { width: 70vw; padding: 20% 1% 1% 1%;}
+.footer {position:fixed; bottom:0; z-index:999999; width: 100%; height: 5vh; background-color:unset;}
+.footer-preguntas {position:fixed; bottom:0; z-index:999999; width: 100%; height: 5vh; background-color:unset;}
+.preguntas-arrow-left {margin: 0 0 0 0; width: 30%;}
+.preguntas-arrow-right {margin: 0 3% 0 0; width: 30%;}
+.arrow-left {padding: 0 0 0 0; width: 30%;}
+.arrow-right {padding: 0 0 0 0; width: 30%;}
+.footer-slide {position:fixed; bottom:0; z-index:999999; width: 100%; height: 5vh; background-color: unset; padding: 5%; box-sizing: unset;}
+.imagen  {height: 50vh;}
+.imagen-excepción {height: 40vh;}
+.preguntas {padding: 5%;}
+
+
+
+@media only screen and (min-width: 1025px){
+.resume-text {padding: 1%;}  
+.cover-logo { width: 25vw; padding: 1%;}
+.cover-logo-game-over { width: 35vw; padding: 1%;}
+.cover-logo-resume { width: 40vw; padding: 20% 1% 1% 1%;}
+.cover-title { width: 50vw; padding: 1%;}
+.cover-title-game-over { width: 30vw; padding: 1%;}
+.footer {position:fixed; bottom:0; z-index:999999; width: 100%; height: 10vh; background-color: unset; padding: 5%; }
+.footer-preguntas {position:fixed; bottom:0; z-index:999999; width: 46%; height: 9vh; background-color: unset; padding: 0; }
+.preguntas-arrow-left {padding: 0 0 0 2%; width: 12%;}
+.preguntas-arrow-right {padding: 0 2% 0 0; width: 12%;}
+.arrow-left {padding: 0 20% 0 0;}
+.arrow-right {padding: 0 0 0 20%;}
+.footer-slide {position:fixed; bottom:0; z-index:999999; width: 100%; height: 3vh; background-color: unset; padding: 5%; box-sizing: unset;}
+.preguntas {padding: 10%; border: solid  #a95b35 2px; height: 93vh; box-sizing: border-box;}
+.imagen  {height: 100vh;}
+.imagen-excepción {height: 100vh;}
+.img-correct {height: 30vh; width: auto; text-align: center; padding: 1%;}
+}
+
+
+/* ------------------------------- */
+
+
+.imagen  {
+  background-repeat:repeat-y;
+  background-size:cover;
+}
+
+.quizz  {
+  background-repeat:repeat-y;
+  background-size:cover;
+  height: auto;
+  width: 100vw;
+  padding: 4vw;
+}
+
+
+
+.titulo-hg {
+  color:#a95b35;
+  font-family: "Bank-Gothic", sans-serif;
+  text-align:center;
+  padding: 0 0 5% 0;
+}
+
+.titulo-mal-hg {
+  color:#a95b35;
+  font-family: "Bank-Gothic", serif;
+  text-align:center;
+}

@@ -1,0 +1,27 @@
+<audio id="click" src="res/mp3/click.mp3" preload="auto" type="audio/mpeg" autoplay></audio>
+
+<div class="w3-row cover-escenario">
+	<div class="w3-col l6 m6 s12 w3-mobile imagen" style="background-image: url('res/png/computadora-correo.png');">
+	</div>
+	<div class="w3-col l6 m6 s12 w3-mobile" style="padding: 2%;">
+		<div class="preguntas">
+			<h1 class="titulo-hg">¿Qué harás?</h1>
+			<p class="pyr" onclick="activity.escenario1_A_bien();">
+				Reportarlo como Phishing
+			</p>
+			<p class="pyr" onclick="activity.escenario1_A_mal();">
+				Clic para ir al enlace
+			</p>
+		</div>
+		<div class="w3-row w3-center footer-preguntas">
+			<div class="w3-third w3-container w3-left preguntas-arrow-left" onclick="activity.cover();">
+				<img src="res/svg/right-arrow-left.svg" alt="" class="w3-image escenarios-button"
+					style="max-width: 100% !important;">
+			</div>
+			<div class="w3-third w3-container w3-right preguntas-arrow-right" onclick="activity.escenario2();">
+				<img src="res/svg/right-arrow-right.svg" alt="" class="w3-image escenarios-button"
+					style="max-width: 100% !important;">
+			</div>
+		</div>
+	</div>
+</div>

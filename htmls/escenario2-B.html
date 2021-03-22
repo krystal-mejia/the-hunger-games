@@ -1,0 +1,31 @@
+<audio id="click" src="res/mp3/click.mp3" preload="auto" type="audio/mpeg" autoplay></audio>
+
+<div class="w3-row cover-escenario">
+	<div class="w3-col l6 m6 s12 w3-mobile imagen-excepción" style="background-image: url('res/gif/llamada-katnis.gif');">
+	</div>
+	<div class="w3-col l6 m6 s12 w3-mobile" style="padding: 2%;">
+		<div class="preguntas">
+			<h1 class="titulo-hg">¿Qué es lo que debes hacer ante esta situación fraudulenta?
+			</h1>
+			<p class="pyr" onclick="activity.escenario2_B_mal();">
+				Indagar más sobre la información que solicita el locutor
+			</p>
+			<p class="pyr" onclick="activity.escenario2_B_mal();">
+				Proporcionar la información para verificar si es mi Banco
+			</p>
+			<p class="pyr" onclick="activity.escenario2_B_bien();">
+				No proporcionar datos personales o bancarios y colgar
+			</p>
+		</div>
+		<div class="w3-row w3-center footer-preguntas">
+			<div class="w3-third w3-container w3-left preguntas-arrow-left" onclick="activity.escenario2();">
+				<img src="res/svg/right-arrow-left.svg" alt="" class="w3-image escenarios-button"
+					style="max-width: 100% !important;">
+			</div>
+			<div class="w3-third w3-container w3-right preguntas-arrow-right" onclick="activity.escenario3();">
+				<img src="res/svg/right-arrow-right.svg" alt="" class="w3-image escenarios-button"
+					style="max-width: 100% !important;">
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,31 @@
+<audio id="click" src="res/mp3/click.mp3" preload="auto" type="audio/mpeg" autoplay></audio>
+
+<div class="w3-row cover-escenario">
+	<div class="w3-col l6 m6 s12 w3-mobile imagen-excepción" style="background-image: url('res/png/computadora-web.png');">
+	</div>
+	<div class="w3-col l6 m6 s12 w3-mobile" style="padding: 2%;">
+		<div class="preguntas">
+			<h1 class="titulo-hg">¿Qué puedes hacer para asegurarte de que el sitio en el que navegas es seguro?
+			</h1>
+			<p class="pyr" onclick="activity.escenario3_C_bien();">
+				Verificar en la URL el candado de seguridad y el https
+			</p>
+			<p class="pyr" onclick="activity.escenario3_C_mal();">
+				Contactar al creador del sitio o proporcionar información 
+			</p>
+			<p class="pyr" onclick="activity.escenario3_C_mal();">
+				Cerrar todas las páginas y volver a acceder
+			</p>
+		</div>
+		<div class="w3-row w3-center footer-preguntas">
+			<div class="w3-third w3-container w3-left preguntas-arrow-left" onclick="activity.escenario3_B();">
+				<img src="res/svg/right-arrow-left.svg" alt="" class="w3-image escenarios-button"
+					style="max-width: 100% !important;">
+			</div>
+			<div class="w3-third w3-container w3-right preguntas-arrow-right" onclick="activity.game_over();">
+				<img src="res/svg/right-arrow-right.svg" alt="" class="w3-image escenarios-button"
+					style="max-width: 100% !important;">
+			</div>
+		</div>
+	</div>
+</div>
